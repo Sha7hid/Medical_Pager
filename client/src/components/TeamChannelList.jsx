@@ -1,6 +1,6 @@
 import React from 'react'
-
-const TeamChannelList = () => {
+import { AddChannel } from '../assets/assets'
+const TeamChannelList = ({}) => {
   return (
     <div>
       
