@@ -22,10 +22,14 @@ size={24}
 }
  return (
     <div className={
-        channel?.id === activeChannel?.id
+        channel?.id === activechannel?.id
         ? 'channel-preview__wrapper__selected'
         : 'channel-preview__wrapper'
-    }>
+    }
+    onClick={ () => {
+console.log(channel);
+    }}
+    >
       
     </div>
   )
