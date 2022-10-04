@@ -1,7 +1,8 @@
 import React from 'react'
-
-const TeamChannelPreview = () => {
-  return (
+import { Avatar, useChatContext } from 'stream-chat-react'
+const TeamChannelPreview = (channel, type) => {
+ const {channel, }
+    return (
     <div>
       
     </div>
