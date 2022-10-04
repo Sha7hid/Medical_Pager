@@ -10,6 +10,15 @@ const TeamChannelList = ({children, error = false, loading, type}) => {
 </div>
         ): null
     }
+    if(loading){
+        return(
+            <div className="team-channel-list">
+            <p className="team-channel-list__message" >
+                Connection error, please wait a moment and try again.
+            </p>
+            </div> 
+        )
+    }
   return (
     <div>
       
