@@ -36,6 +36,7 @@ channelRenderFilterFn={() => {}}
 List={(listProps) =>(
 <TeamChannelList
 {...listProps}
+type="team"
 />
 )}
 />
