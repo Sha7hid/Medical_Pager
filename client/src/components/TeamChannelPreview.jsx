@@ -14,6 +14,7 @@ return(
 <Avatar
 image={members[0]?.user?.image}
 name={members[0]?.user?.fullName}
+size={24}
 />
     </div>
 )
