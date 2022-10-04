@@ -6,7 +6,17 @@ const TeamChannelPreview = (channel, type) => {
     <p className="channel-preview__item">
         {channel?.data?.name || channel?.data?.id}
     </p>
-   )
+   );
+   const DirectPreview = () => {
+    const members = Object.values(channel.state.members).filter(({user}) => user.id != client.userID);
+return(
+    <div className="channel-preview__item single">
+<Avatar
+image={members[0].user.image}
+/>
+    </div>
+)
+}
  return (
     <div>
       
