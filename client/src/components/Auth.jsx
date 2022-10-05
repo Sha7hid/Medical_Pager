@@ -15,7 +15,7 @@ const Auth = () => {
     const [isSignup, setIsSignup] = useState(true);
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]:e.target.value});
-  console.log(form);
+  
 }
 const handleSubmit = (e) => {
     e.preventDefault();
