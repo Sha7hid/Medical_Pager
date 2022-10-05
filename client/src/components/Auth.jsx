@@ -9,6 +9,14 @@ const Auth = () => {
       <div className="auth__form-container_fields">
         <div className="auth__form-container_fields-content">
             <p>{isSignup ? 'Sign Up' : 'Sign In'}</p>
+            <form onSubmit={}>
+{isSignup && (
+    <div className="auth__form-container_fields-content_input">
+        <label htmlFor="fullName">full Name</label>
+    <input name="fullName" type="text" />
+    </div>
+)}
+            </form>
         </div>
       </div>
     </div>
