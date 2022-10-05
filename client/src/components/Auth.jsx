@@ -31,9 +31,9 @@ const Auth = () => {
     </div>
     {isSignup && (
     <div className="auth__form-container_fields-content_input">
-        <label htmlFor="fullName">full Name</label>
-    <input name="fullName" type="text" 
-    placeholder="Full Name"
+        <label htmlFor="phoneNumber">Phone Number</label>
+    <input name="phoneNumber" type="text" 
+    placeholder="Phone Number"
     onChange={handleChange}
     required
     />
