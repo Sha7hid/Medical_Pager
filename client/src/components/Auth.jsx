@@ -81,6 +81,9 @@ const Auth = () => {
             </div>
         </div>
       </div>
+      <div className="auth__form-container_image">
+
+      </div>
     </div>
   )
 }
