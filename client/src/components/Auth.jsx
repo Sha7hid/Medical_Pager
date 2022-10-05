@@ -5,7 +5,10 @@ import signinImage from '../assets/assets/signup.jpg'
 const Auth = () => {
     const [isSignup, setIsSignup] = useState(true);
   const handleChange = () => {}
-    return (
+  const switchMode =() => {
+    setIsSignup((prevIsSignup) => !prevIsSignup);
+  }
+  return (
     <div className="auth__form-container">
       <div className="auth__form-container_fields">
         <div className="auth__form-container_fields-content">
