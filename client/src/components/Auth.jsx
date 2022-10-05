@@ -13,7 +13,10 @@ const Auth = () => {
 {isSignup && (
     <div className="auth__form-container_fields-content_input">
         <label htmlFor="fullName">full Name</label>
-    <input name="fullName" type="text" />
+    <input name="fullName" type="text" 
+    placeholder="Full Name"
+    onChange={handleChange}
+    />
     </div>
 )}
             </form>
