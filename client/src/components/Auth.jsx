@@ -5,12 +5,17 @@ import signinImage from '../assets/assets/signup.jpg'
 const initialState = {
     fullName: '',
     username:'',
-    password:''
+    password:'',
+    confirmPassword:'',
+    phoneNumber:'',
+    avatarURL:'',
 }
 const Auth = () => {
-    const [form, setForm] = useState();
+    const [form, setForm] = useState(initialState);
     const [isSignup, setIsSignup] = useState(true);
-  const handleChange = () => {}
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]:e.target.value});
+  }
   const switchMode =() => {
     setIsSignup((prevIsSignup) => !prevIsSignup);
   }
