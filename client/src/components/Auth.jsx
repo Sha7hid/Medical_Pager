@@ -2,7 +2,13 @@ import React, { useState } from 'react'
 import Cookies from 'universal-cookie';
 import axios from 'axios';
 import signinImage from '../assets/assets/signup.jpg'
+const initialState = {
+    fullName: '',
+    username:'',
+    password:''
+}
 const Auth = () => {
+    const [form, setForm] = useState();
     const [isSignup, setIsSignup] = useState(true);
   const handleChange = () => {}
   const switchMode =() => {
