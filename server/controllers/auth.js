@@ -19,6 +19,8 @@ const signup = async (req, res) => {
        const hashedPassword = await bcrypt.hash(password, 10);
     
        const token = serverClient.createUserToken(userId);
+    
+       res.status(200).json({token, fullName, username, userId, hashedPassword});
     } catch (error) {
         console.log(error);
 res.status(500).json({message:error});
