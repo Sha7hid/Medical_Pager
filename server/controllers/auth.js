@@ -5,6 +5,9 @@ const crypto = require('crypto');
 
 const { UserBindingContext } = require("twilio/lib/rest/chat/v2/service/user/userBinding");
 
+const api_key = process.env.STREAM_API_KEY;
+const api_secret = process.env.STREAM_API_SECRET;
+const app_id = process.env.STREAM_APP_ID;
 const signup = (req, res) => {
     try {
         const { fullName, username, password, phoneNumber} = req.body;
