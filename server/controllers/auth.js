@@ -20,7 +20,7 @@ const signup = async (req, res) => {
     
        const token = serverClient.createUserToken(userId);
     
-       res.status(200).json({token, fullName, username, userId, hashedPassword});
+       res.status(200).json({token, fullName, username, userId, hashedPassword, phoneNumber});
     } catch (error) {
         console.log(error);
 res.status(500).json({message:error});
