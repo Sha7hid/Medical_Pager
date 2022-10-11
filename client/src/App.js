@@ -7,7 +7,7 @@ import {ChannelContainer,ChannelListContainer,Auth} from './components';
 const apiKey = 'rxj4n4w59bfz';
 const client = StreamChat.getInstance(apiKey);
 const authToken = false;
-
+///////
 function App() {
   if(!authToken) return <Auth/>
   return (
