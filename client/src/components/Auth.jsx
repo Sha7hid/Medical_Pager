@@ -22,7 +22,8 @@ const Auth = () => {
 const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(form);
+    const {fullName, username, password, phoneNumber, avatarURL} = form;
+    const URL = 'https://localhost:5000/auth';
 }
   const switchMode =() => {
     setIsSignup((prevIsSignup) => !prevIsSignup);
