@@ -31,7 +31,10 @@ const handleSubmit = async (e) => {
         username, password, fullName, phoneNumber, avatarURL,
     });
 
-    cookies.set('token',token)
+    cookies.set('token',token);
+    cookies.set('username',username);
+    cookies.set('fullName',fullName);
+    cookies.set('userId',userId);
 }
   const switchMode =() => {
     setIsSignup((prevIsSignup) => !prevIsSignup);
