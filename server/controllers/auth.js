@@ -35,6 +35,10 @@ try {
     const client = StreamChat.getInstance(api_key, api_secret);
 
     const {users} = await client.queryUsers({name:username});
+
+    if(!users.length) return res.status(400).json({message: 'User not found'});
+
+    const success = await bcrypt.compare(password, users[0].hashedPassword);
 } catch (error) {
     console.log(error);
     res.status(500).json({message:error});
