@@ -18,7 +18,7 @@ if(authToken){
     token:cookies.get('token'),
     hashedPassword:cookies.get('hashedPassword'),
     phoneNumber:cookies.get('phoneNumber'),
-  })
+  }, authToken)
 }
 function App() {
   if(!authToken) return <Auth/>
