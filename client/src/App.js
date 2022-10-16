@@ -11,14 +11,13 @@ const client = StreamChat.getInstance(apiKey);
 
 if(authToken){
   client.connect({
-    
-    token:cookies.get('token'),
-    username:cookies.get('username'),
+    id:cookies.get('userId'),
+    name:cookies.get('username'),
     fullName:cookies.get('fullName'),
-    userId:cookies.get('userId'),
-    phoneNumber:cookies.get('phoneNumber'),
-    avatarURL:cookies.get('avatarURL'),
+    image:cookies.get('avatarURL'),
+    token:cookies.get('token'),
     hashedPassword:cookies.get('hashedPassword'),
+    phoneNumber:cookies.get('phoneNumber'),
   })
 }
 function App() {
